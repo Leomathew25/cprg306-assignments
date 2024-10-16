@@ -65,12 +65,12 @@ const ItemList = () => {
     return (
       <ul className="space-y-4">
         {items.map((item, index) => (
-          <Item 
+          <Item
             key={index} 
             name={item.name} 
             quantity={item.quantity} 
             category={item.category} 
-          />
+          ></Item>
         ))}
       </ul>
     );
