@@ -1,9 +1,10 @@
-const Item = ({ name, quantity, category }) => {
-    return (
-      <li className="flex justify-between items-center p-4 bg-gray-100 rounded-lg shadow-md mb-2">
-        <div className="text-lg font-semibold text-gray-800">{name}</div>
-        <div className="text-sm text-gray-500">Quantity: {quantity}</div>
-        <div className="text-sm text-blue-500">Category: {category}</div>
-      </li>
-    );
-  };
+export default function Item({name, quantity, category}) {
+  return (
+    <section className="bg-zinc-700 w-60">
+      <h3 className="text-white font-bold text-xl">{name},{quantity}</h3>
+      <p className="text-white">Buy {quantity} in {category}</p>
+    </section>
+  );
+
+
+}

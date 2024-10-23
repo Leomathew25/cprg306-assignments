@@ -1,13 +1,12 @@
+import ItemList from "./item-list";
 
-import ItemList from "./item-list"
-export default function Page(){
-return (
-    <main className="min-h-screen bg-gray-50 p-8">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">Shopping List</h1>
-    <ItemList></ItemList>  
-    </main>
-
-  );
-};
-
+export default function Page() {
+    return (
+        <main  className="bg-zinc-950 p-4">
+            <h1 className="text-white font-bold text-2xl mb-5">Shopping List</h1>
+            <ItemList/>
+            <h2>Week 3</h2>
+        </main>
+    );
+}
 
